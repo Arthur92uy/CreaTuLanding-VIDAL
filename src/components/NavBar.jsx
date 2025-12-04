@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Logo from "../assets/easyMaxRes.png";
 import { CartWidget } from "./CartWidget";
 import { Search } from "./Search";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
-    let mensaje1 =
-        "Envios sin costo a TODO MONTEVIDEO tus compras desde $1400";
+    let mensaje1 = "Envios sin costo a TODO MONTEVIDEO tus compras desde $1400";
     let mensaje2 =
         "Envios a TODO URUGUAY por agencia, costo segun kilaje del pedido";
 
@@ -46,29 +46,29 @@ export const NavBar = () => {
                 </h1>
                 <ul className="navbar__menu">
                     <li className="navbar__menu-item">
-                        <a className="navbar__menu-link" href="">
+                        <Link className="navbar__menu-link" to="/inicio">
                             Inicio
-                        </a>
+                        </Link>
                     </li>
                     <li className="navbar__menu-item">
-                        <a className="navbar__menu-link" href="">
+                        <Link className="navbar__menu-link" to="/frutos-secos">
                             Frutos secos
-                        </a>
+                        </Link>
                     </li>
                     <li className="navbar__menu-item">
-                        <a className="navbar__menu-link" href="">
+                        <Link className="navbar__menu-link" to="/frutales">
                             Frutales
-                        </a>
+                        </Link>
                     </li>
                     <li className="navbar__menu-item">
-                        <a className="navbar__menu-link" href="">
+                        <Link className="navbar__menu-link" to="/harinas">
                             Harinas
-                        </a>
+                        </Link>
                     </li>
                     <li className="navbar__menu-item">
-                        <a className="navbar__menu-link" href="">
+                        <Link className="navbar__menu-link" to="/semillas">
                             Semillas
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <div className="navbar__search-user-cartwidget">
