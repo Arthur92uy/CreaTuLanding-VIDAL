@@ -1,5 +1,10 @@
 import React from "react";
+import { Card } from "./Card";
 
 export const ItemListContainer = () => {
-    return <div>ItemListContainer</div>;
+    return (
+        <div className="main">
+            <Card />
+        </div>
+    );
 };
